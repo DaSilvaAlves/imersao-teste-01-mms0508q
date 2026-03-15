@@ -1,0 +1,83 @@
+/* === GLOBAL VARIABLES === */
+:root {
+ color-bg: #a0a0a;
+  --colorg: #ffffff  --color-accent: #00FFF;
+  --color-accent-secondary: #03A9F4; /* derived from accent color */
+ --blur-amount: 12px;
+  --border-glow: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* === BACKGROUND === */
+body {
+  background:(--color-bg);
+  font-family: 'DM Sans', sans-serif  color: var(--colorg);
+}
+
+/* === CARDS/SECTIONS === */
+.card {
+  backdrop-filter: blur(var(--blur-amount));
+  background: rgba(255, 255, 255, .04);
+  border: var(--border-glow  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(var(--color-accent), 0.3);
+}
+
+/* === BUTTONS === */
+.button {
+  border: px solid var(---accent);
+  color: var(--colorcent);
+  background: transparent;
+  padding 0.5 1.25;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box: 0 0 8px rgba(var(--color-accent), 0.4);
+}
+
+/* === INPUTS/FORMS ===.input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--colorcent);
+  color: var(--color-fg);
+  padding: 0.5rem 0;
+ _field: 100%;
+ outline: none;
+}
+
+.input:focus {
+ -shadow: 02px 8px rgba(var(--color-accent), 0.4);
+}
+
+/* EMPTY STATES === */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+ align-items: center  justify-content: center;
+  padding: 2rem;
+}
+
+.empty-state-icon {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.empty-state-text {
+  font-size: 18px;
+  color: var(--color-fg);
+}
+
+/* === SCROLLBAR === */
+webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+::--scrollbar-track {
+  background: transparent;
+}
